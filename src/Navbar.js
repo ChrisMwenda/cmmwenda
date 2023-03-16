@@ -30,9 +30,9 @@ function Navbar() {
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
-            <li>
-              <NavLink to="/cmmwenda.substack.com">Blog</NavLink>
-            </li>
+            {/* <li>
+              <NavLink to="https://www.cmmwenda.substack.com">Blog</NavLink>
+            </li> */}
           </ul>
         </div>
       </div>
