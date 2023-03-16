@@ -24,7 +24,7 @@ export default function Home() {
           </Button> */}
         </div>
                 <div className="btn-grp col">
-                <a className="lets_talk" href="/"> Lets Talk!</a>
+                <a className="lets_talk" href="mailto:chrismbogo97@gmail.com"> Lets Talk!</a>
           {/* <Button variant="outlined">Let's Talk</Button> */}
         </div>
       </div>
