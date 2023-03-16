@@ -1,0 +1,136 @@
+.nav-container {
+    /* background-image: url(b-sm1.png); */
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      /* border-style: solid;
+      border-color: rgb(255, 243, 5); */
+    }
+    
+    .navbar {
+      height: 60px;
+      background-color:darkslategrey;
+      position: relative;
+    }
+    
+    .logo{
+        max-width: 35%;
+      }
+    
+  
+    .nav-elements ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      max-width: fit-content;
+    }
+    
+    .nav-elements ul li:not(:last-child) {
+      margin-right: 60px;
+    }
+    
+    .nav-elements ul a {
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+      text-decoration: none;
+    }
+    
+  
+    .nav-elements ul a:hover{
+      color: darkcyan;
+    }
+    
+  
+    .nav-elements ul a.active {
+      color: #7df1f8;
+      font-weight: 500;
+      position: relative;
+    }
+    
+    .nav-elements ul a.active::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+    }
+    
+    .menu-icon {
+        display:none;
+      }
+
+    .dash-symbol a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 1.4rem;
+    }
+  
+      .dash-symbol h1{
+        display: none;
+      }
+  
+    /* Mobile resposive */
+    @media (max-width: 768px) {
+        .nav-elements ul li:not(:last-child) {
+          margin-right: 30px;
+        }
+    }
+    @media (max-width: 600px) {
+  
+      .navbar{
+        background-color:#c6f3f6
+      }
+        .menu-icon {
+          display: block;
+          cursor: pointer;
+          color: #046c94;
+        }
+      
+        .nav-elements {
+          background-color:#046b9482;
+          position: absolute;
+          right: 0;
+          top: 60px;
+          width: 0px;
+          height: calc(100vh);
+          transition: all 0.3s ease-in;
+          overflow: hidden;
+          color: #ffffff;
+              }
+      
+        .nav-elements.active {
+          width: 270px;
+         
+        }
+      
+        .nav-elements ul {
+          display: flex;
+          flex-direction: column;
+          color: #ffffff;
+          
+        }
+  
+        .nav-elements ul a {
+          color: #7df1f8;
+        }
+        .dash-symbol a{
+        max-width: 50%;
+        display: none;
+      }
+        .nav-elements ul li {
+          margin-right: unset;
+          margin-top: 22px;
+        }
+        .dash-symbol h1{
+          display: block;
+          color: #ffffff;
+        }
+  
+      }

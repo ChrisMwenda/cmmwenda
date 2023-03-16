@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Monda";
+  src: local("Monda"),
+    url("../public/Monda/Monda-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Monda";
+}
+
+.nav {
+  background-color: darkslategrey;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.7rem;
+  padding: 0 0.75rem;
+  max-width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 10;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 4px;
+}
+.nav li :hover {
+  font-size: 1.05rem;
+  color: darkcyan;
+}
+
+.site-title {
+  font-size: 1rem;
+}
+
+.nav li.active {
+  background-color: darkcyan;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.nav li.active :hover {
+  color: #ffffff;
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+  border-color: crimson;
+}
+
+.chris_img {
+  max-width: 35%;
+  clip-path: circle();
+}
+
+.chris_img_2 {
+  max-width: 35%;
+  /* border-radius:100%; */
+  clip-path: circle();
+}
+
+.lets_talk {
+  border-radius: 5px;
+  background-color: darkcyan;
+  color: #ffffff;
+  border-color: rgba(242, 187, 215, 0.087);
+  padding: 5px;
+  text-decoration: none;
+}
+
+.Main-intro-header {
+  max-width: fit-content;
+  font-size: 2rem;
+  color: #028495;
+  overflow: hidden;
+  border-right: 0.05em solid pink; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: pink;
+  }
+}
+
+.line-1 {
+  height: 1px;
+  background: #02849551;
+  margin-top: 3%;
+}
+
+.btn-grp {
+  padding: 5px;
+  margin: 2.5px;
+  margin-top: 3.5px;
+}
+
+.btn-grp :hover {
+  color: #028495;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.testimonials {
+  margin: 5px;
+  text-align: center;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+/* .testimonial-box{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-color: crimson;border-style: solid;
+
+    gap: 5px; 
+} */
+
+.client-name {
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: rgb(190, 246, 246);
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonial-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-sm-12 {
+    flex: 1;
+  }
+
+  .blog-outer-box {
+    display: flex;
+    margin-top: 15px;
+  }
+  .blog-sample-box {
+    margin: 3px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: #02849531;
+    border-style: solid;
+    color: darkslategrey;
+  }
+  .testimonials-column {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #028495;
+    border-color: #c8f0f641;
+    border-style: double;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonial-box {
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+
+  .col-sm-12 {
+    flex: 0;
+  }
+
+  .testimonials-column {
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #028495;
+    border-color: #c8f0f641;
+    border-style: double;
+  }
+
+  .blog-sample-box {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #028495;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 8px;
+  }
+  .blog-outer-box {
+    margin-top: 5px;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+}
+
+.testimonials-header {
+  color: rgb(249, 224, 238);
+}
+
+.readMoreBtn {
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 3px;
+  color: #028495;
+  border-color: #028495bb;
+  border-style: solid;
+}
+.readMoreBtn :hover {
+  cursor: pointer;
+  background-color: #8eecf8;
+  font-size: 1.15rem;
+}
+
+.content-tags {
+  color: rgb(254, 245, 250);
+  font-size: 0.75 rem;
+  font-style: italic;
+}
