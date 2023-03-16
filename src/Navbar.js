@@ -31,7 +31,7 @@ function Navbar() {
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="/cmmwenda.substack.com">Blog</NavLink>
             </li>
           </ul>
         </div>

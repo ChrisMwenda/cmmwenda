@@ -85,16 +85,16 @@
     @media (max-width: 600px) {
   
       .navbar{
-        background-color:#c6f3f6
+        background-color:darkslategrey;
       }
         .menu-icon {
           display: block;
           cursor: pointer;
-          color: #046c94;
+          color:#ffffff;
         }
       
         .nav-elements {
-          background-color:#046b9482;
+          background-color:darkslategrey;
           position: absolute;
           right: 0;
           top: 60px;
@@ -111,6 +111,8 @@
         }
       
         .nav-elements ul {
+          margin-top: 120px;
+          top: 60px;
           display: flex;
           flex-direction: column;
           color: #ffffff;
@@ -122,7 +124,11 @@
         }
         .dash-symbol a{
         max-width: 50%;
-        display: none;
+        margin: auto;
+        font-weight: lighter;
+        font-size: 1.3rem;
+        padding: 3px;
+
       }
         .nav-elements ul li {
           margin-right: unset;
